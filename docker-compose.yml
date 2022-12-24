@@ -1,0 +1,9 @@
+version: "3"
+services: 
+  golang:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    volumes: 
+      - ./server/:/go/src
+    tty: true
